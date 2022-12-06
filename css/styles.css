@@ -10,22 +10,31 @@
 }
 
 /*--Global Styles--*/
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
 }
 
 .container {
+  width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 0px 0px;
-  background-color: var(--page-color-white);
+  margin: auto;
+  padding: 0 15px;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 0px 24px 0px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .header-line {
   border-bottom: solid 1px #ececec;
@@ -33,31 +42,33 @@ body {
 
 .navi {
   display: flex;
-  list-style: none;
 }
 
 .section {
-  padding: 94px 0px 0px 0px;
+  padding-bottom: 94px;
 }
 
 /*-----FOOTER-----*/
 .footer {
   background-color: var(--page-color-back);
-  padding: 0px 0px 60px 30px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-/* .address-list {
-    padding: 20px 0px 0px 0px;    
-} */
+.address-list {
+  padding: 20px 0px 0px 0px;
+  text-decoration: none;
+}
 
 .address-list-item {
   list-style: none;
+  text-decoration: none;
   font-size: 14px;
   line-height: 171%;
   letter-spacing: 0.03em;
-  padding-left: 0px;
 }
 .address-list-item-link {
   color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
 }
 .address-list-item-link:hover,
 .address-list-item-link:focus,
@@ -68,11 +79,9 @@ body {
 /*-----WEBSTUDIO-----*/
 .logo {
   display: flex;
-  padding: 24px 93px 0px 0px;
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
-  /* margin-top: 24px; */
-  /* margin-right: 93px; */
+  margin-right: 93px;
   color: #000;
   float: left;
   text-decoration: none;
@@ -103,6 +112,7 @@ body {
 .nav-list-item-link {
   font-size: 14px;
   font-weight: 500;
+  text-decoration: none;
   color: var(--page-color-black);
 }
 
@@ -114,19 +124,20 @@ body {
 
 /*-----RIGHT-UP-CONTACT-----*/
 .right-up-contact {
-  margin-top: 32px;
-  margin-left: 227px;
+  margin-top: 8px;
+  margin-left: 300px;
   float: left;
 }
 
 .right-up-contact-list {
-  margin-right: 50px;
+  margin-right: 48px;
   display: inline;
 }
 
 .right-up-contact-list-link {
   font-size: 14px;
   font-weight: 500;
+  text-decoration: none;
   color: (var--page-color-grey);
 }
 
@@ -147,6 +158,7 @@ body {
 .motto-frame {
   text-align: center;
   width: 696px;
+  height: 120px;
 }
 .motto-text {
   font-size: 44px;
@@ -154,6 +166,7 @@ body {
   line-height: 136%;
   letter-spacing: 0.06;
   color: var(--page-color-white);
+  margin-bottom: 50px;
 }
 .motto-button {
   font-size: 16px;
@@ -174,10 +187,8 @@ body {
 }
 
 /*----- DESCRIPTION -----*/
-
-.decription-list {
-  display: flex;
-  flex-wrap: wrap;
+.description {
+  padding: 94px 0 94px 0;
 }
 .description-item {
   display: inline-block;
@@ -210,6 +221,7 @@ body {
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 .whatwedo-list {
   display: flex;
@@ -219,11 +231,10 @@ body {
 
 .whatwedo-item {
   display: inline-block;
-  gap: 0px;
-  padding: 0px;
+  margin-right: 0px;
 }
 .whatwedo-item:last-child {
-  margin-right: 20px;
+  margin-right: 0px;
 }
 /*-----TEAM-----*/
 .team {
@@ -237,21 +248,26 @@ body {
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 .team-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
 .team-item-pic {
-  display: inline-block;
-  width: 280px;
+  display: inline;
+  width: 270px;
 }
+
 .team-member {
   font-size: 16px;
   font-weight: 500;
   line-height: 19px;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 .team-member-desc {
   font-size: 16px;
@@ -276,6 +292,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 94px;
+  margin-bottom: 56px;
 }
 .buttons-item {
   display: inline;
@@ -299,7 +317,7 @@ body {
 }
 
 .offer {
-  background-color: var(--page-color-background);
+  background-color: var(--page-color-white);
 }
 .offer-list {
   display: flex;
@@ -307,22 +325,25 @@ body {
   padding: 30px 0px 94px 0px;
   justify-content: center;
   row-gap: 30px;
-  column-gap: 22px;
+  column-gap: 24px;
 }
 
 .offer-item {
   list-style: none;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
 .offer-list:last-child {
   margin-right: 0px;
 }
-.offer-pic {
-  margin: 0px 0px 0px 0px;
-}
+/* .offer-pic {
+} */
 .offer-pic-desc {
   font-size: 18px;
   font-weight: 700;
   line-height: 36px;
+  background-color: var(--page-color-white);
 }
 .offer-pic-desc-lower {
   font-size: 16px;
