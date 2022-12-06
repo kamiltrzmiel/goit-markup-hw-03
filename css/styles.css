@@ -20,6 +20,8 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  width: 100%;
+  max-width: 1600px;
 }
 
 .container {
@@ -45,6 +47,7 @@ body {
 }
 
 .section {
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -83,7 +86,6 @@ body {
   font-size: 26px;
   margin-right: 93px;
   color: #000;
-  float: left;
   text-decoration: none;
 }
 /*-----STATIC COLOR CLASSES-----*/
