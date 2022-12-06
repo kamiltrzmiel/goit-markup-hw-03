@@ -242,7 +242,7 @@ body {
 .team {
   background-color: var(--page-color-team);
   text-align: center;
-  padding: 94px 0px 94px 0px;
+  /* padding: 94px 0px 94px 0px; */
 }
 .team-title {
   font-size: 36px;
