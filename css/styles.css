@@ -22,7 +22,9 @@
 body {
   font-family: 'Roboto', sans-serif;
   width: 100%;
+  font-size: 100%;
   max-width: 1600px;
+  margin: 0;
 }
 
 .container {
@@ -59,7 +61,7 @@ body {
   padding-bottom: 60px;
 }
 .address-list {
-  padding: 0px 0px 0px 0px;
+  padding: 20px 0px 0px 0px;
   text-decoration: none;
 }
 
@@ -300,8 +302,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 94px;
-  margin-bottom: 56px;
+  /* margin-top: 94px; */
+  /* margin-bottom: 56px; */
 }
 .buttons-item {
   display: inline;
@@ -330,7 +332,6 @@ body {
 .offer-list {
   display: flex;
   flex-wrap: wrap;
-  padding: 30px 0px 94px 0px;
   justify-content: center;
   row-gap: 30px;
   column-gap: 24px;
@@ -347,7 +348,7 @@ body {
 }
 /* .offer-pic {
 } */
-.offer-pic-desc {
+.offer-pic-desc > h3 {
   font-size: 18px;
   font-weight: 700;
   line-height: 36px;
