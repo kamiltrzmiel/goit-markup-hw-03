@@ -7,6 +7,7 @@
   --page-color-grey: #757575;
   --page-color-back: #2f303a;
   --page-color-team: #f5f4fa;
+  --page-color-borbox: #eeeeee;
 }
 
 /*--Global Styles--*/
@@ -58,7 +59,7 @@ body {
   padding-bottom: 60px;
 }
 .address-list {
-  padding: 20px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
   text-decoration: none;
 }
 
@@ -190,12 +191,15 @@ body {
 
 /*----- DESCRIPTION -----*/
 .description {
-  padding: 94px 0 94px 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 .description-item {
   display: inline-block;
   width: 270px;
   margin: 0px 20px 0px 0px;
+  padding-left: 0;
+  padding-right: 0;
 }
 .description-item:last-child {
   margin-right: 0px;
@@ -215,6 +219,8 @@ body {
 /*-----WHAT WE DO-----*/
 .whatwedo {
   text-align: center;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .whatwedo-title {
@@ -242,7 +248,6 @@ body {
 .team {
   background-color: var(--page-color-team);
   text-align: center;
-  /* padding: 94px 0px 94px 0px; */
 }
 .team-title {
   font-size: 36px;
@@ -332,9 +337,9 @@ body {
 
 .offer-item {
   list-style: none;
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid var(--page-color-borbox);
+  border-left: 1px solid var(--page-color-borbox);
+  border-right: 1px solid var(--page-color-borbox);
 }
 .offer-list:last-child {
   margin-right: 0px;
